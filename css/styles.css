@@ -62,20 +62,20 @@ address {
                 padding-right: 15px;
                 margin: 0 auto;
 }
-.visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-}
 
-        
+
+   .visually-hidden {
+           position: absolute;
+           width: 1px;
+           height: 1px;
+           margin: -1px;
+           border: 0;
+           padding: 0;
+           white-space: nowrap;
+           clip-path: inset(100%);
+           clip: rect(0 0 0 0);
+           overflow: hidden;
+   }
 
 
 .header-section {
@@ -120,7 +120,7 @@ address {
         background-color: var(--secondary-color);
         border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
                 background: var(--WHITE, #FFF);
-                box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+                box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
         padding-top: 24px;
                 padding-bottom: 24px;
@@ -213,21 +213,29 @@ address {
 
 }
 
-.header-mail,
-.header-tel {
-        color: var(--primary-color);
-    
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        
-        letter-spacing: 0.02em;
-        column-gap: 40px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.header-mail-tel {
+                color: var(--primary-color);
+                
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.5;
+                
+                        letter-spacing: 0.02em;
+                        column-gap: 40px;
+                        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+
 }
-.header-mail:hover,
-.header-tel:focus {
+ 
+        
+
+
+.header-mail-tel:hover,
+.header-mail-tel:focus
+ {
      color: var(--accent-color);
 }
 
